@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tidy: Clean up your Mac</title>
+  <meta name="description" content="Tidy finds the files taking up space on your Mac, from old caches and app leftovers to forgotten downloads and duplicates. Review what's there and clear out what you don't need.">
+  <meta name="theme-color" content="#121418">
+  <meta property="og:title" content="Tidy: Clean up your Mac">
+  <meta property="og:description" content="Get your storage back. Free for macOS 15 and later.">
+  <meta property="og:image" content="assets/shots/dashboard-dark.jpg">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/icon.png">
+  <link rel="preload" as="image" href="assets/shots/dashboard-dark.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-dashboard" viewBox="0 0 24 24"><rect x="3" y="4" width="8" height="7" rx="2"/><rect x="13" y="4" width="8" height="4" rx="1.5"/><rect x="13" y="10" width="8" height="10" rx="2"/><rect x="3" y="13" width="8" height="7" rx="2"/></symbol>
+      <symbol id="i-eraser" viewBox="0 0 24 24"><path d="m7 21-4.3-4.3a1 1 0 0 1 0-1.4l10-10a1 1 0 0 1 1.4 0l5.6 5.6a1 1 0 0 1 0 1.4L11 21"/><path d="M22 21H7"/><path d="m5 11 9 9"/></symbol>
+      <symbol id="i-pie" viewBox="0 0 24 24"><path d="M21 12A9 9 0 1 1 12 3v9z"/><path d="M15 3.5A9 9 0 0 1 20.5 9H15z"/></symbol>
+      <symbol id="i-file-clock" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4"/><path d="M14 2v6h6"/><circle cx="16" cy="16" r="5"/><path d="M16 14v2l1.5 1"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="13" height="13" rx="2.5"/><path d="M16 8V5.5A2.5 2.5 0 0 0 13.5 3h-8A2.5 2.5 0 0 0 3 5.5v8A2.5 2.5 0 0 0 5.5 16H8"/></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v9"/><path d="m8 12 4 4 4-4"/></symbol>
+      <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="2"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="2"/></symbol>
+      <symbol id="i-puzzle" viewBox="0 0 24 24"><path d="M4 8h3.5a2 2 0 1 0 4 0H15v3.5a2 2 0 1 1 0 4V20H4z"/></symbol>
+      <symbol id="i-power" viewBox="0 0 24 24"><path d="M12 3v9"/><path d="M18.4 6.6a9 9 0 1 1-12.8 0"/></symbol>
+      <symbol id="i-pulse" viewBox="0 0 24 24"><path d="M3 12h4l2.5-6 5 12L17 12h4"/></symbol>
+      <symbol id="i-stethoscope" viewBox="0 0 24 24"><path d="M5 3v6a5 5 0 0 0 10 0V3"/><path d="M10 14v1a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="11" r="2"/></symbol>
+      <symbol id="i-history" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l3 2"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.8 2.7L16.5 9.5"/></symbol>
+      <symbol id="i-warn" viewBox="0 0 24 24"><path d="M10.3 3.9 2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
+      <symbol id="i-apple" viewBox="0 0 24 24"><path stroke="none" fill="currentColor" d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9s-1.8-.9-3-.8c-1.6 0-3 .9-3.8 2.3-1.6 2.8-.4 6.9 1.2 9.2.8 1.1 1.7 2.3 2.9 2.3 1.2 0 1.6-.8 3-.8s1.8.8 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.5 1.3-2.6-.1 0-2.5-.9-2.5-3.6zM14.1 5.8c.6-.8 1.1-1.8 1-2.9-.9 0-2 .6-2.7 1.4-.6.7-1.1 1.8-1 2.8 1 .1 2.1-.5 2.7-1.3z"/></symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/></symbol>
+      <symbol id="i-list-check" viewBox="0 0 24 24"><path d="M11 6h10"/><path d="M11 12h10"/><path d="M11 18h10"/><path d="m3 6 1.5 1.5L7 5"/><path d="m3 12 1.5 1.5L7 11"/><path d="m3 18 1.5 1.5L7 17"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6z"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="i-app" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="M8 12h8"/></symbol>
+      <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M6 7l1 13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1l1-13"/><path d="M9 7V4h6v3"/></symbol>
+    </defs>
+  </svg>
+
+  <header class="nav-wrap">
+    <nav class="nav glass" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="Tidy home">
+        <img src="assets/icon.png" alt="" width="28" height="28">
+        <span>Tidy</span>
+      </a>
+      <div class="nav-links">
+        <a href="#cleanup">Cleanup</a>
+        <a href="#tour">Tour</a>
+        <a href="#safety">Safety</a>
+        <a href="#privacy">Privacy</a>
+      </div>
+      <a class="btn btn-prominent btn-sm" href="https://github.com/aarav-puri/tidy/releases/latest/download/Tidy.zip">Download</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <img class="hero-icon reveal" src="assets/icon.png" alt="Tidy app icon" width="132" height="132">
+      <h1 class="glass-text hero-title reveal">Clean up your Mac.</h1>
+      <p class="hero-tagline reveal">Get your storage back.</p>
+      <p class="hero-sub reveal">Tidy finds the files taking up space on your Mac, from old caches and app leftovers to forgotten downloads and duplicates. Review what's there and clear out what you don't need.</p>
+      <div class="hero-actions reveal">
+        <a class="btn btn-prominent btn-lg" href="https://github.com/aarav-puri/tidy/releases/latest/download/Tidy.zip">
+          <svg class="ic" aria-hidden="true"><use href="#i-apple"/></svg>
+          Download Tidy
+        </a>
+      </div>
+
+      <figure class="shot shot-hero reveal">
+        <img src="assets/shots/dashboard-dark.jpg" width="2000" height="1099" fetchpriority="high"
+             alt="Tidy's Dashboard: a storage ring with 312.4 GB available of 994.66 GB, a category bar, cleanup opportunities and Mac details.">
+      </figure>
+    </section>
+
+    <!-- Smart Cleanup -->
+    <section class="split" id="cleanup">
+      <div class="split-copy reveal">
+        <p class="eyebrow">Smart Cleanup</p>
+        <h2>More space. Less clutter.</h2>
+        <p class="lede">Find unnecessary files across your Mac in one scan. Tidy groups everything by type, shows you what each file does, and recommends what you can remove.</p>
+        <ul class="risk-list">
+          <li>
+            <span class="tile tile-green"><svg class="ic"><use href="#i-check"/></svg></span>
+            <div><strong>Recommended</strong><span>Caches, logs, and temporary files that apps can recreate.</span></div>
+          </li>
+          <li>
+            <span class="tile tile-orange"><svg class="ic"><use href="#i-warn"/></svg></span>
+            <div><strong>Review Required</strong><span>Files that might still be useful. Review them before removal.</span></div>
+          </li>
+          <li>
+            <span class="tile tile-gray"><svg class="ic"><use href="#i-lock"/></svg></span>
+            <div><strong>Protected</strong><span>Files that should stay right where they are.</span></div>
+          </li>
+        </ul>
+      </div>
+      <figure class="shot reveal">
+        <img src="assets/shots/smartCleanup-dark.jpg" width="2000" height="1099" loading="lazy"
+             alt="Smart Cleanup showing 67.28 GB across six cleanup categories.">
+      </figure>
+    </section>
+
+    <!-- Storage Explorer -->
+    <section class="split split-reverse" id="tour">
+      <figure class="shot reveal">
+        <img src="assets/shots/storageExplorer-dark.jpg" width="2000" height="1099" loading="lazy"
+             alt="Storage Explorer with a donut chart of the home folder and a sortable table of folders by size.">
+      </figure>
+      <div class="split-copy reveal">
+        <p class="eyebrow">Storage Explorer</p>
+        <h2>See where your space goes.</h2>
+        <p class="lede">Explore your Mac's storage by folder. Find the directories taking up the most room, drill down into individual files, and preview them with Quick Look before moving them to the Trash.</p>
+      </div>
+    </section>
+
+    <!-- Duplicates -->
+    <section class="split">
+      <div class="split-copy reveal">
+        <p class="eyebrow">Duplicates</p>
+        <h2>Keep one. Lose the rest.</h2>
+        <p class="lede">Find duplicate files taking up unnecessary space. Tidy checks that the original copy is still there before removing anything.</p>
+      </div>
+      <figure class="shot reveal">
+        <img src="assets/shots/duplicates-dark.jpg" width="2000" height="1099" loading="lazy"
+             alt="Duplicates grouped by file, with each copy's location and the copies selected for removal.">
+      </figure>
+    </section>
+
+    <!-- App Manager -->
+    <section class="split split-reverse">
+      <figure class="shot reveal">
+        <img src="assets/shots/appManager-dark.jpg" width="2000" height="1099" loading="lazy"
+             alt="App Manager listing installed apps with developer, version, size and last opened date.">
+      </figure>
+      <div class="split-copy reveal">
+        <p class="eyebrow">App Manager</p>
+        <h2>Take control of your apps.</h2>
+        <p class="lede">See what's installed, find apps you no longer use, and remove them along with their leftover files. See your login items and what's running in the background.</p>
+      </div>
+    </section>
+
+    <!-- Large & Old Files -->
+    <section class="split">
+      <div class="split-copy reveal">
+        <p class="eyebrow">Large &amp; Old Files</p>
+        <h2>Find the files you've forgotten.</h2>
+        <p class="lede">Sort files by size and last modified date. Find old exports, oversized downloads, and files you no longer need.</p>
+      </div>
+      <figure class="shot reveal">
+        <img src="assets/shots/largeFiles-dark.jpg" width="2000" height="1099" loading="lazy"
+             alt="Large and Old Files listing big files with size, kind, last opened and modified dates.">
+      </figure>
+    </section>
+
+    <!-- Downloads -->
+    <section class="split split-reverse">
+      <figure class="shot reveal">
+        <img src="assets/shots/downloads-dark.jpg" width="2000" height="1099" loading="lazy"
+             alt="Downloads listing installers, archives and documents with size, date added and source.">
+      </figure>
+      <div class="split-copy reveal">
+        <p class="eyebrow">Downloads</p>
+        <h2>Clear out your Downloads.</h2>
+        <p class="lede">Find old installers, archives, and other files collecting dust in your Downloads folder.</p>
+      </div>
+    </section>
+
+    <!-- Performance & Maintenance -->
+    <section class="pair-section">
+      <div class="section-head reveal">
+        <p class="eyebrow">Performance &amp; Maintenance</p>
+        <h2>Keep your Mac running smoothly.</h2>
+        <p class="lede">View system activity and run maintenance tasks from one place.</p>
+      </div>
+      <div class="pair">
+        <figure class="shot reveal"><img src="assets/shots/performance-dark.jpg" width="2000" height="1099" loading="lazy" alt="Performance view with CPU and memory charts, memory pressure and swap."></figure>
+        <figure class="shot reveal"><img src="assets/shots/maintenance-dark.jpg" width="2000" height="1099" loading="lazy" alt="Maintenance view with disk, cache, temporary file and Trash checks, plus macOS utilities."></figure>
+      </div>
+    </section>
+
+    <!-- Dashboard -->
+    <section class="feature-wide">
+      <div class="section-head reveal">
+        <p class="eyebrow">Dashboard</p>
+        <h2>Everything at a glance.</h2>
+        <p class="lede">See your available storage, disk usage, cleanup opportunities, and Mac details in one place.</p>
+      </div>
+      <figure class="shot reveal">
+        <img src="assets/shots/dashboard-light.jpg" width="2000" height="1099" loading="lazy"
+             alt="The Dashboard in Light Mode with storage, cleanup opportunities, Mac details and recent activity.">
+      </figure>
+    </section>
+
+    <!-- Safety -->
+    <section class="safety" id="safety">
+      <div class="section-head reveal">
+        <p class="eyebrow">Safety</p>
+        <h2>Cleaning without the guesswork.</h2>
+        <p class="lede">Tidy checks every file before removing it. You decide what goes.</p>
+      </div>
+      <ul class="steps">
+        <li class="glass reveal"><span class="tile tile-blue"><svg class="ic"><use href="#i-layers"/></svg></span><strong>Three levels of protection</strong><span>Every item is marked Recommended, Review Required, or Protected. Only recommended files are selected by default.</span></li>
+        <li class="glass reveal"><span class="tile tile-blue"><svg class="ic"><use href="#i-list-check"/></svg></span><strong>You're in control</strong><span>Review every item before cleanup. Permanent deletion always asks first.</span></li>
+        <li class="glass reveal"><span class="tile tile-blue"><svg class="ic"><use href="#i-shield"/></svg></span><strong>Checked before removal</strong><span>Files are verified again before they're moved. System folders and SIP-protected files are off limits.</span></li>
+        <li class="glass reveal"><span class="tile tile-blue"><svg class="ic"><use href="#i-app"/></svg></span><strong>Apps stay undisturbed</strong><span>Files that belong to an app that's running are left alone.</span></li>
+        <li class="glass reveal"><span class="tile tile-blue"><svg class="ic"><use href="#i-trash"/></svg></span><strong>The Trash is your safety net</strong><span>Files are moved to the Trash by default. Activity History lets you restore them.</span></li>
+        <li class="glass reveal"><span class="tile tile-blue"><svg class="ic"><use href="#i-copy"/></svg></span><strong>Duplicates handled carefully</strong><span>Tidy verifies the copy you're keeping before removing a duplicate.</span></li>
+      </ul>
+    </section>
+
+    <!-- Privacy -->
+    <section class="split privacy" id="privacy">
+      <div class="split-copy reveal">
+        <p class="eyebrow">Privacy</p>
+        <h2>Your data stays yours.</h2>
+        <p class="lede">Tidy runs locally on your Mac. No accounts, analytics, uploads, or network connections.</p>
+        <p class="lede">No administrator password. No need to disable System Integrity Protection.</p>
+      </div>
+      <ul class="list glass perms reveal" aria-label="Permissions">
+        <li><div><strong>Files and Folders</strong><span>Tidy requests access to Documents, Desktop, and Downloads when needed.</span></div></li>
+        <li><div><strong>Full Disk Access</strong><span>Optional access to additional locations, including app containers and device backups.</span></div></li>
+        <li><div><strong>Automation</strong><span>Used only when you ask Tidy to empty the Trash or list your login apps.</span></div></li>
+      </ul>
+    </section>
+
+    <!-- Download -->
+    <section class="download" id="download">
+      <div class="download-card glass reveal">
+        <img src="assets/icon.png" alt="" width="104" height="104">
+        <h2 class="glass-text download-title">Meet Tidy.</h2>
+        <p class="lede">A simpler way to manage your Mac's storage.</p>
+        <a class="btn btn-prominent btn-lg" href="https://github.com/aarav-puri/tidy/releases/latest/download/Tidy.zip">
+          <svg class="ic" aria-hidden="true"><use href="#i-apple"/></svg>
+          Download Tidy
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="brand"><img src="assets/icon.png" alt="" width="22" height="22"> Tidy</span>
+      <span class="muted">Made for Mac by Aarav Puri. <a class="footer-link" href="https://github.com/aarav-puri/tidy">GitHub</a></span>
+    </div>
+  </footer>
+
+  <script>
+    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Reveal on scroll, skipped when the user prefers reduced motion.
+    if (!reduce && 'IntersectionObserver' in window) {
+      document.documentElement.classList.add('js-reveal');
+      const io = new IntersectionObserver(entries => {
+        for (const e of entries) if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+      document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    }
+
+    // The nav gains stronger glass once the page scrolls.
+    const nav = document.querySelector('.nav');
+    const onScroll = () => nav.classList.toggle('scrolled', scrollY > 12);
+    addEventListener('scroll', onScroll, { passive: true }); onScroll();
+  </script>
+</body>
+</html>
