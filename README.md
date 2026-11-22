@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="../../releases/latest">
+<a href="https://tidy-wheat.vercel.app">
   <img src="website/assets/icon.png" alt="Tidy" height="96">
 </a>
 
@@ -10,7 +10,7 @@
 
 Tidy finds the files taking up space on your Mac, from old caches and app leftovers to forgotten downloads and duplicates. Review what's there and clear out what you don't need.
 
-[**Download**](../../releases/latest/download/Tidy.zip) · [Safety](#safety) · [Install](#install) · [Report an issue](../../issues)
+[**Download**](../../releases/latest/download/Tidy.zip) · [Website](https://tidy-wheat.vercel.app) · [Safety](#safety) · [Install](#install) · [Report an issue](../../issues)
 
 ![macOS 15+](https://img.shields.io/badge/macOS-15%2B-1c1c1e?logo=apple&logoColor=white)
 ![Universal](https://img.shields.io/badge/Apple%20Silicon%20%2B%20Intel-universal-0a84ff)
